@@ -1,5 +1,5 @@
-# This repository contains Python scripts that implement EN models to analyze PCEC processing data.
-# This repository coinsides with a manuscript submitted to the journal of the american ceramics society.
+### This repository contains Python scripts that implement EN models to analyze PCEC processing data.
+### This repository coinsides with a manuscript submitted to the journal of the american ceramics society.
 
 
 ## Notes for using the scripts:
