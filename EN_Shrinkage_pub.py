@@ -2,6 +2,7 @@
 This script will be for the use of an Elastic Net model to parse out which factors 
 matter most in predicting negatrode shrinkage from processing parameters.
 Script written with the help of ChatGPT
+C-Meisel
 '''
 
 from sklearn.linear_model import ElasticNet
