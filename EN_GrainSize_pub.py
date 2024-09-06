@@ -75,7 +75,6 @@ save_resid_plot = None #
 save_coef_resid_plot = None # '
 save_learning_curve_plot = None #
 
-
 ' ----- End Lines to Edit'
 gs_data = 'path_to_data' #
 df = pd.read_excel(gs_data,model) 
@@ -386,8 +385,9 @@ if plot_coefficients_residuals == True:
     coef_df = coef_df.sort_values(by='Absolute_Coefficient', ascending=False)
     
     if plot_drop_batch == True:
-        ss2d = 'Sinter_Date'
-        coef_df = coef_df[~coef_df['Feature'].str.startswith(ss2d)]
+        # Dropping Electrolyte spray batch:
+        substring_to_drop = 'Electrolyte spray batch'
+        coef_df = coef_df[~coef_df['Feature'].str.startswith(substring_to_drop)]
 
     # Data formatting for plotting
     print(' Length of coef_df:', len(coef_df))
